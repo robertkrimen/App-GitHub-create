@@ -3,11 +3,17 @@ package App::GitHub::create;
 
 =head1 SYNOPSIS
 
-    # Update the description of github:alice/example
-    github-create --login alice --token 42fe60... --repository example --description "Xyzzy"
+    # Create the repository github//alice/xyzzy
+    github-create --login alice --token 42fe60... --name xyzzy
 
     # Pulling login and token from $HOME/.github
-    github-create --repository example --description "Xyzzy"
+    github-create --name xyzzy
+
+    # With description and homepage
+    github-create --name xyzzy --description "The incredible Xyzzy" --homepage http://example/xyzzy
+
+    # Print out usage
+    github-create --help
 
 =head1 DESCRIPTION
 

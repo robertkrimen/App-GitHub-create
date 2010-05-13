@@ -1,0 +1,37 @@
+NAME
+    App::GitHub::create - Create a github repository from the command-line
+
+VERSION
+    version 0.0010
+
+SYNOPSIS
+        # Create the repository github//alice/xyzzy
+        github-create --login alice --token 42fe60... --name xyzzy
+
+        # Pulling login and token from $HOME/.github
+        github-create --name xyzzy
+
+        # With description and homepage
+        github-create --name xyzzy --description "The incredible Xyzzy" --homepage http://example/xyzzy
+
+        # Print out usage
+        github-create --help
+
+DESCRIPTION
+    A simple tool for creating a new github repository
+
+GitHub identity format ($HOME/.github or $HOME/.github-identity)
+        login <login>
+        token <token>
+
+    Optionally GnuPG encrypted
+
+AUTHOR
+      Robert Krimen <robertkrimen@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2010 by Robert Krimen.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
