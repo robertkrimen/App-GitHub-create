@@ -1,9 +1,9 @@
 package App::GitHub::create;
-# ABSTRACT: Create a github repository from the command-line
+# ABSTRACT: Create a github repository from the commandline
 
 =head1 SYNOPSIS
 
-    # Create the repository github//alice/xyzzy
+    # Create the repository github:alice/xyzzy
     github-create --login alice --token 42fe60... --name xyzzy
 
     # Pulling login and token from $HOME/.github
@@ -24,7 +24,13 @@ A simple tool for creating a new github repository
     login <login>
     token <token>
 
-Optionally GnuPG encrypted
+(Optionally GnuPG encrypted; see L<Config::Identity>)
+
+=head1 SEE ALSO
+
+L<App::GitHub::update>
+
+L<Config::Identity>
 
 =cut
 
