@@ -2,17 +2,17 @@ NAME
     App::GitHub::create - Create a github repository from the commandline
 
 VERSION
-    version 0.0011
+    version 0.0012
 
 SYNOPSIS
         # Create the repository github:alice/xyzzy
-        github-create --login alice --token 42fe60... --name xyzzy
+        github-create --login alice --token 42fe60... xyzzy
 
         # Pulling login and token from $HOME/.github
-        github-create --name xyzzy
+        github-create xyzzy
 
         # With description and homepage
-        github-create --name xyzzy --description "The incredible Xyzzy" --homepage http://example/xyzzy
+        github-create xyzzy --description "The incredible Xyzzy" --homepage http://example/xyzzy
 
         # Print out usage
         github-create --help
